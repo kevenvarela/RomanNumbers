@@ -53,8 +53,14 @@ describe Integer do
       expect(99.as_roman_number_string).to eq 'XCIX'
     end
 
-    it 'when sent to 100 should return C' do
+    it 'when sent to 100 to 999 should work' do
       expect(100.as_roman_number_string).to eq 'C'
+      expect(300.as_roman_number_string).to eq 'CCC'
+      expect(400.as_roman_number_string).to eq 'CD'
+      expect(500.as_roman_number_string).to eq 'D'
+      expect(554.as_roman_number_string).to eq 'DLIV'
+      expect(888.as_roman_number_string).to eq 'DCCCLXXXVIII'
+      expect(999.as_roman_number_string).to eq 'CMXCIX'
     end
 
   end
