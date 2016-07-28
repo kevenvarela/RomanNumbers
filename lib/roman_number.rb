@@ -5,7 +5,7 @@ class Integer
     tens      = self / 10  % 10
     units     = self / 1   % 10
 
-    tens.convert_digit_using('X', 'L', 'C') + units.convert_digit_using('I', 'V', 'X')
+    hundreeds.convert_digit_using('C', 'D', 'M') + tens.convert_digit_using('X', 'L', 'C') + units.convert_digit_using('I', 'V', 'X')
   end
 
   def convert_digit_using(as_one, as_five, as_ten)
